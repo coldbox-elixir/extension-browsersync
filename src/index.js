@@ -50,13 +50,12 @@ function getOptions(options) {
 
     return _.extend({
         files: [
-            config.appPath + '/**/*.cfc',
-            config.appPath + '/**/*.cfm',
+            config.appPaths.root + '/**/*.cfc',
+            config.appPaths.root + '/**/*.cfm',
+            config.viewPath + '/**/*.cfm',
             config.get('public.css.outputFolder') + '/**/*.css',
             config.get('public.js.outputFolder') + '/**/*.js',
-            config.get('public.versioning.buildFolder') + '/rev-manifest.json',
-            config.viewPath + '/**/*.cfc',
-            config.viewPath + '/**/*.cfm'
+            config.get('public.versioning.buildFolder') + '/rev-manifest.json'
         ],
 
         watchOptions: {

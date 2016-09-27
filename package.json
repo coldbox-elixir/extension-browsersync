@@ -4,9 +4,9 @@
   "description": "ColdBox Elixir Browsersync Extension",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/coldbox-elixir/extension-vue"
+    "url" : "https://github.com/coldbox-elixir/extension-browsersync"
   },
-  "homepage": "https://github.com/coldbox-elixir/extension-vue",
+  "homepage": "https://github.com/coldbox-elixir/extension-browsersync",
   "main": "dist/index.js",
   "scripts": {
     "compile": "babel --presets=es2015 -d dist src",

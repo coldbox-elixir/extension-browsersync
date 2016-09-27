@@ -1,4 +1,4 @@
-import Elixir from 'laravel-elixir';
+import Elixir from 'coldbox-elixir';
 
 let _;
 let browserSync;

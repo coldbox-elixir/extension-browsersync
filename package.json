@@ -1,19 +1,25 @@
 {
-  "name": "laravel-elixir-browsersync-official",
+  "name": "coldbox-elixir-browsersync-official",
   "version": "1.0.0",
-  "description": "Laravel Elixir Browsersync integration.",
+  "description": "ColdBox Elixir Browsersync integration.",
   "main": "dist/index.js",
   "scripts": {
     "compile": "babel --presets=es2015 -d dist src",
     "prepublish": "npm run compile"
   },
   "keywords": [
-    "laravel",
+    "coldbox",
     "elixir",
     "browsersync",
     "gulp"
   ],
   "author": "Jeffrey Way",
+  "contributors": [
+    {
+      "name": "Eric Peterson",
+      "email": "eric@elpete.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.13.0",

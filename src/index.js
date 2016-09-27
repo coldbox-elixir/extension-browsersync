@@ -50,11 +50,13 @@ function getOptions(options) {
 
     return _.extend({
         files: [
-            config.appPath + '/**/*.php',
+            config.appPath + '/**/*.cfc',
+            config.appPath + '/**/*.cfm',
             config.get('public.css.outputFolder') + '/**/*.css',
             config.get('public.js.outputFolder') + '/**/*.js',
             config.get('public.versioning.buildFolder') + '/rev-manifest.json',
-            config.viewPath + '/**/*.php'
+            config.viewPath + '/**/*.cfc',
+            config.viewPath + '/**/*.cfm'
         ],
 
         watchOptions: {

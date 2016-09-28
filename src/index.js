@@ -64,7 +64,8 @@ function getOptions(options) {
             config.appPaths.modules_app + '/**/*.cfm',
             config.appPaths.tests + '/**/*.cfc',
             config.appPaths.tests + '/**/*.cfm',
-            config.appPaths.views + '/**/*.cfm',
+            config.viewPaths.views + '/**/*.cfm',
+            config.viewPaths.layouts + '/**/*.cfm',
             config.get( 'public.css.outputFolder' ) + '/**/*.css',
             config.get( 'public.js.outputFolder' ) + '/**/*.js',
             config.get( 'public.versioning.buildFolder' ) + '/rev-manifest.json'

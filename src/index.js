@@ -50,12 +50,24 @@ function getOptions(options) {
 
     return _.extend({
         files: [
-            config.appPaths.root + '/**/*.cfc',
-            config.appPaths.root + '/**/*.cfm',
-            config.viewPath + '/**/*.cfm',
-            config.get('public.css.outputFolder') + '/**/*.css',
-            config.get('public.js.outputFolder') + '/**/*.js',
-            config.get('public.versioning.buildFolder') + '/rev-manifest.json'
+            config.appPaths.config + '/**/*.cfc',
+            config.appPaths.config + '/**/*.cfm',
+            config.appPaths.handlers + '/**/*.cfc',
+            config.appPaths.handlers + '/**/*.cfm',
+            config.appPaths.interceptors + '/**/*.cfc',
+            config.appPaths.interceptors + '/**/*.cfm',
+            config.appPaths.models + '/**/*.cfc',
+            config.appPaths.models + '/**/*.cfm',
+            config.appPaths.modules + '/**/*.cfc',
+            config.appPaths.modules + '/**/*.cfm',
+            config.appPaths.modules_app + '/**/*.cfc',
+            config.appPaths.modules_app + '/**/*.cfm',
+            config.appPaths.tests + '/**/*.cfc',
+            config.appPaths.tests + '/**/*.cfm',
+            config.appPaths.views + '/**/*.cfm',
+            config.get( 'public.css.outputFolder' ) + '/**/*.css',
+            config.get( 'public.js.outputFolder' ) + '/**/*.js',
+            config.get( 'public.versioning.buildFolder' ) + '/rev-manifest.json'
         ],
 
         watchOptions: {

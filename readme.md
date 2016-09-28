@@ -1,11 +1,11 @@
-# Laravel Elixir Browsersync Support
+# ColdBox Elixir Browsersync Support
 
-This extension brings Browsersync support to Laravel Elixir version 6 and up. Prior to that release, Browsersync was baked in.
+This extension brings Browsersync support to ColdBox Elixir version 2 and up. Prior to that release, Browsersync was baked in.
 
 ## Step 1: Install
 
 ```bash
-npm install laravel-elixir-browsersync-official --save-dev
+npm install coldbox-elixir-browsersync --save-dev
 ```
 
 ## Step 2: Use It
@@ -14,17 +14,12 @@ Within your Gulpfile, add:
 
 ```js
 elixir(function(mix) {
-  mix.browserSync();
+  mix.browserSync( {
+	proxy: 'localhost:12345'
+  } );
 });
 ```
 
-Once you run `gulp watch`, access your web application using port 3000 to enable browser syncing: `http://homestead.app:3000`. 
-If you're using a domain other than `homestead.app` for local development (likely), you may pass an array of options as the first argument to the browserSync method:
+Where `localhost:12345` is the host and port of your app.
 
-```js
-elixir(function(mix) {
-  mix.browserSync({
-    proxy: 'project.app'
-  });
-});
-```
+You can add any BrowserSync options in the object passed to `mix.browsersync()` (See http://www.browsersync.io/docs/options/)
